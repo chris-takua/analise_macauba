@@ -5,23 +5,21 @@ venv/
 ENV/
 .venv/
 env/
-
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.pdb
 *.egg-info/
 *.egg
 *.so
 
-# Ferramentas de lint e type-check
+# Ferramentas de lint e cache
 .mypy_cache/
-.ruff_cache/
 .pytest_cache/
-coverage/
+.ruff_cache/
+.coverage
 *.cover
-*.coverage
+coverage/
 
 # ============================
 # NOTEBOOKS E JUPYTER
@@ -33,26 +31,24 @@ coverage/
 # DADOS DO PROJETO (MODAL, TRANSMISSIBILIDADE, EXPERIMENTOS)
 # ============================
 
-# Dados brutos (não versionar)
+# Dados brutos e intermediários (não versionar)
 data/raw/
+data/interim/
 dados_brutos/
 coletas/
 experimentos_brutos/
-
-# Dados intermediários
-data/interim/
 interim/
-temp/
 tmp/
+temp/
 
-# Dados processados grandes
+# Dados processados (somente documentar outputs importantes)
 data/processed/
 processed/
-resultados/
 outputs/
 export/
+resultados/
 
-# Arquivos volumosos típicos de análise modal e vibração
+# Arquivos típicos de aquisição e vibração (pesados)
 *.csv
 *.tsv
 *.xlsx
@@ -61,38 +57,57 @@ export/
 *.mat
 *.hdf5
 *.wav
+*.flac
 *.tdms
 *.jsonl
 
-# Para permitir CSVs pequenos, remover esta linha ^
-# (mas para doutorado geralmente é melhor ignorar tudo)
+# ============================
+# FIGURAS, FOTOS E VÍDEOS (Arquivos pesados)
+# ============================
 
-# ============================
-# FIGURAS E RESULTADOS GRÁFICOS
-# ============================
-figures/
-figs/
-plots/
+# Imagens comuns
 *.png
 *.jpg
 *.jpeg
-*.svg
-*.pdf
+*.tif
+*.tiff
+*.bmp
+*.heic
+*.heif
+
+# Arquivos RAW de câmera
+*.cr2
+*.cr3
+*.nef
+*.raw
+*.dng
+
+# Vídeos pesados
+*.mp4
+*.mov
+*.MOV
+*.avi
+*.mkv
+*.wmv
+*.mpeg
+*.mpg
+
+# Pastas de mídia
+imagens/
+fotos/
+videos/
+media/
+multimedia/
 
 # ============================
-# LOGS E REGISTROS DE EXECUÇÃO
+# LOGS E TEMPORÁRIOS
 # ============================
 *.log
 logs/
 debug/
 *.tmp
-
-# ============================
-# ARQUIVOS TEMPORÁRIOS DO WINDOWS
-# ============================
-Thumbs.db
-desktop.ini
-$RECYCLE.BIN/
+*.bak
+*.old
 
 # ============================
 # IDEs E EDITORES (VSCode, PyCharm)
@@ -102,7 +117,14 @@ $RECYCLE.BIN/
 *.code-workspace
 
 # ============================
-# COMPILAÇÃO, BUILD, BINÁRIOS
+# ARQUIVOS TEMPORÁRIOS DO WINDOWS
+# ============================
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ============================
+# ARTEFATOS DE BUILD / COMPILAÇÃO
 # ============================
 build/
 dist/
@@ -112,7 +134,7 @@ dist/
 *.exe
 
 # ============================
-# DATASETS GRANDES DE SIMULAÇÃO (FEM / ANSYS / SOLIDWORKS)
+# ARQUIVOS DE SIMULAÇÃO FEM/CAD (pesados)
 # ============================
 *.stl
 *.step
@@ -126,15 +148,7 @@ dist/
 *.nas
 
 # ============================
-# ARQUIVOS DO GIT E SISTEMA
-# ============================
-*.bak
-*.old
-*.swp
-*.swo
-
-# ============================
-# SEGURANÇA: VARIÁVEIS DE AMBIENTE
+# SEGURANÇA – VARIÁVEIS DE AMBIENTE
 # ============================
 .env
 .env.*
