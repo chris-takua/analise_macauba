@@ -1,0 +1,140 @@
+# ============================
+# AMBIENTE E PYTHON
+# ============================
+venv/
+ENV/
+.venv/
+env/
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.so
+
+# Ferramentas de lint e type-check
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+coverage/
+*.cover
+*.coverage
+
+# ============================
+# NOTEBOOKS E JUPYTER
+# ============================
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# ============================
+# DADOS DO PROJETO (MODAL, TRANSMISSIBILIDADE, EXPERIMENTOS)
+# ============================
+
+# Dados brutos (não versionar)
+data/raw/
+dados_brutos/
+coletas/
+experimentos_brutos/
+
+# Dados intermediários
+data/interim/
+interim/
+temp/
+tmp/
+
+# Dados processados grandes
+data/processed/
+processed/
+resultados/
+outputs/
+export/
+
+# Arquivos volumosos típicos de análise modal e vibração
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.ods
+*.mat
+*.hdf5
+*.wav
+*.tdms
+*.jsonl
+
+# Para permitir CSVs pequenos, remover esta linha ^
+# (mas para doutorado geralmente é melhor ignorar tudo)
+
+# ============================
+# FIGURAS E RESULTADOS GRÁFICOS
+# ============================
+figures/
+figs/
+plots/
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.pdf
+
+# ============================
+# LOGS E REGISTROS DE EXECUÇÃO
+# ============================
+*.log
+logs/
+debug/
+*.tmp
+
+# ============================
+# ARQUIVOS TEMPORÁRIOS DO WINDOWS
+# ============================
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ============================
+# IDEs E EDITORES (VSCode, PyCharm)
+# ============================
+.vscode/
+.idea/
+*.code-workspace
+
+# ============================
+# COMPILAÇÃO, BUILD, BINÁRIOS
+# ============================
+build/
+dist/
+*.dll
+*.o
+*.obj
+*.exe
+
+# ============================
+# DATASETS GRANDES DE SIMULAÇÃO (FEM / ANSYS / SOLIDWORKS)
+# ============================
+*.stl
+*.step
+*.step
+*.iges
+*.igs
+*.mesh
+*.vtk
+*.fem
+*.inp
+*.nas
+
+# ============================
+# ARQUIVOS DO GIT E SISTEMA
+# ============================
+*.bak
+*.old
+*.swp
+*.swo
+
+# ============================
+# SEGURANÇA: VARIÁVEIS DE AMBIENTE
+# ============================
+.env
+.env.*

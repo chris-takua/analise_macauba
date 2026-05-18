@@ -1,0 +1,188 @@
+<?xml version='1.0' standalone='yes' ?>
+<LVData xmlns="http://www.ni.com/LVData">
+<Version>16.0f2</Version>
+<Cluster>
+<Name>State</Name>
+<NumElts>21</NumElts>
+<Array>
+<Name>Channel Info Array</Name>
+<Dimsize>2</Dimsize>
+<Cluster>
+<Name>Channel Information</Name>
+<NumElts>9</NumElts>
+<Boolean>
+<Name>Initialized?</Name>
+<Val>1</Val>
+</Boolean>
+<DAQChannel>
+<Name>DAQmx Channel</Name>
+<Val>cDAQ3Mod1/ai0</Val>
+</DAQChannel>
+<U16>
+<Name>Channel Type</Name>
+<Val>1</Val>
+</U16>
+<DBL>
+<Name>Max</Name>
+<Val>2000.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Sensitivity</Name>
+<Val>2.30200000000000</Val>
+</DBL>
+<Boolean>
+<Name>IEPE</Name>
+<Val>1</Val>
+</Boolean>
+<EW>
+<Name>Coupling</Name>
+<Choice>AC</Choice>
+<Choice>DC</Choice>
+<Val>0</Val>
+</EW>
+<String>
+<Name>Location</Name>
+<Val></Val>
+</String>
+<String>
+<Name>Orientation</Name>
+<Val></Val>
+</String>
+</Cluster>
+<Cluster>
+<Name>Channel Information</Name>
+<NumElts>9</NumElts>
+<Boolean>
+<Name>Initialized?</Name>
+<Val>1</Val>
+</Boolean>
+<DAQChannel>
+<Name>DAQmx Channel</Name>
+<Val>cDAQ3Mod1/ai1</Val>
+</DAQChannel>
+<U16>
+<Name>Channel Type</Name>
+<Val>2</Val>
+</U16>
+<DBL>
+<Name>Max</Name>
+<Val>50.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Sensitivity</Name>
+<Val>100.90000000000001</Val>
+</DBL>
+<Boolean>
+<Name>IEPE</Name>
+<Val>1</Val>
+</Boolean>
+<EW>
+<Name>Coupling</Name>
+<Choice>AC</Choice>
+<Choice>DC</Choice>
+<Val>0</Val>
+</EW>
+<String>
+<Name>Location</Name>
+<Val></Val>
+</String>
+<String>
+<Name>Orientation</Name>
+<Val></Val>
+</String>
+</Cluster>
+</Array>
+<EW>
+<Name>Timing Mode</Name>
+<Choice>Time</Choice>
+<Choice>Frequency</Choice>
+<Choice>Order</Choice>
+<Val>1</Val>
+</EW>
+<DBL>
+<Name>Timing Control 1</Name>
+<Val>2560.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Timing Control 2</Name>
+<Val>0.25000000000000</Val>
+</DBL>
+<I32>
+<Name>Timing Control 3</Name>
+<Val>16</Val>
+</I32>
+<DBL>
+<Name>Timing Indicator 1</Name>
+<Val>4.00000000000000</Val>
+</DBL>
+<Boolean>
+<Name>Reference Visible?</Name>
+<Val>1</Val>
+</Boolean>
+<EW>
+<Name>Reference Type</Name>
+<Choice>&lt;none&gt;</Choice>
+<Choice>Analog Tachometer</Choice>
+<Choice>Analog SW Trigger</Choice>
+<Val>2</Val>
+</EW>
+<String>
+<Name>Tachometer Channel</Name>
+<Val></Val>
+</String>
+<I32>
+<Name>Tach Pulses Per Rev</Name>
+<Val>1</Val>
+</I32>
+<EW>
+<Name>Tach Direction</Name>
+<Choice>CW</Choice>
+<Choice>CCW</Choice>
+<Val>0</Val>
+</EW>
+<EW>
+<Name>Tach Slope</Name>
+<Choice>Rising</Choice>
+<Choice>Falling</Choice>
+<Val>0</Val>
+</EW>
+<DBL>
+<Name>Tach Threshold</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<String>
+<Name>Trigger Channel</Name>
+<Val>cDAQ3Mod1/ai0</Val>
+</String>
+<DBL>
+<Name>Trigger Level</Name>
+<Val>1.00000000000000</Val>
+</DBL>
+<I32>
+<Name>Pretrigger Samples</Name>
+<Val>20</Val>
+</I32>
+<EW>
+<Name>Trigger Slope</Name>
+<Choice>Falling</Choice>
+<Choice>Rising</Choice>
+<Val>1</Val>
+</EW>
+<DBL>
+<Name>Trigger Hysteresis</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<Boolean>
+<Name>Logging Visible?</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>Enable Logging</Name>
+<Val>0</Val>
+</Boolean>
+<Path>
+<Name>Logfile Path</Name>
+<Val>c:\test.tdms</Val>
+</Path>
+</Cluster>
+</LVData>
